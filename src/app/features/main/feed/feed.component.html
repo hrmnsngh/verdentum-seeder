@@ -1,0 +1,62 @@
+<!-- <div class="notification is-info">
+  Your feed</div> -->
+<div class="columns">
+  <div class="column is-7">
+    <div *ngFor="let feed of feeds">
+      <div class="fluid-container">
+        <article class="well">
+          <div class="row">
+            <div class="col-1 border-bottom">
+              <img class="author-image" src="../../../../assets/authorImage.png" alt="Author Image">
+            </div>
+            <div class="col-8 border-bottom">
+              <div class="feed-author-name">{{feed.AuthorName}}</div>
+              <div class="feed-date">{{feed.feedDate}}</div>
+            </div>
+            <div class="col-3"><span (click)="feedAction()">...</span></div>
+
+          </div>
+          <div class="row">
+            <div class="col-9">
+              <i> <b>Program: </b>
+                <span>{{feed.program}}</span></i>
+            </div>
+            <div class="col-3 sdg">SDG 5</div>
+          </div>
+          <div class="row">
+            <div class="col-9">
+              <div class="border-bottom school-visit"> <i> <b>Schools visits: {{feed.schoolVisitCount}} </b></i></div>
+              <div class="border-bottom students-reached"> <i> <b>No. of students contacted: {{feed.studentsContactedCount}} </b></i>
+              </div>
+            </div>
+            <div class="col-3 geo-loc">
+              <div>
+                <label for="uploadLocation">UPLOAD LOCATION</label>
+                <span name="latitude">{{feed.uploadLocation}}</span>
+              </div>
+              <div>
+                <label for="latitute">LATITUDE</label>
+                <span name="latitude">{{feed.latitude}}</span>
+              </div>
+              <div>
+                <label for="longitute">LONGITUDE</label>
+                <span name="latitude">{{feed.longitude}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <p>{{feed.feedContent}}</p>
+          </div>
+          <div class="row">
+            <img  src="../../../../assets/feedImage.png" alt="Feed Image">
+          </div>
+          <div class="row">
+            <div class="col-3"><i class="fas fa-heart"></i>Supported</div>
+            <div class="col-3 border-both-sides"><i class="far fa-hand-paper"></i>Organizer Hi-fi</div>
+            <div class="col-3"><i class="fas fa-share"></i>Share</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

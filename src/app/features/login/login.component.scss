@@ -1,0 +1,31 @@
+
+.v-container{
+  width: auto;
+  height: auto;
+  top: calc(50% - height/2);
+  background: linear-gradient(270deg, rgba(2, 37, 67, 0.6) 38.05%, rgba(2, 37, 67, 0.6) 43.15%, rgba(47, 135, 211, 0.6) 79.17%);
+}
+.background-image{
+  background-image: url('../../../assets/background.png');
+
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  position: absolute;
+}
+.margin-10{
+  margin-left: 10px;
+}
+.logo{
+ height: auto;
+ width: auto;
+}
+.text-white{
+  color: white;
+  font: 14px;
+}
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #4BA9FA;
+}

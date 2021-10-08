@@ -1,0 +1,48 @@
+<div class="v-container">
+  <div class="main-content text-white background-image">
+    <div class="row">
+      <span class="d-flex justify-content-center">
+        <img class="logo" src="../../../assets/verdentum_logo.png" alt="verdentum_logo">
+      </span>
+    </div>
+    <div class="row">
+      <div class="col-7"></div>
+      <div class="col-5">
+        <div class="row">
+          <div class="d-flex justify-content-around"><span class="underline"> Sign In </span></div>
+        </div>
+        <div class="row">
+          <div class="d-flex justify-content-center">
+            <form #loginForm>
+              <div class="form-group">
+                <label for="username">Email or Username</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username">
+              </div>
+
+              <div class="form-group">
+                <label for="password">Password</label>
+                <div class="input-group mb-3">
+                  <input [attr.type]="(showPassword? 'text' : 'password')" class="form-control" id="pass"
+                    name="password" [(ngModel)]="password">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" (click)="showPass()">
+                      <i *ngIf="!showPassword" class="fa-solid fa-eye"></i>
+                      <i *ngIf="showPassword" class="fa-solid fa-eye-slash"></i>
+                    </button>
+                  </div>
+                </div>
+              </div><br>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control" (click)="signIn()">Sign In</button>
+              </div>
+              <br>
+              <div class="form-group d-flex justify-content-center">
+                <a (click)="forgotPassword()">Forgot Password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
